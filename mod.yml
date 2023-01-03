@@ -1,0 +1,8 @@
+title: MPR Forms
+description: This mod lets you use the special drive forms seen in my "Mystic's Path Remastered" plando into any randomizer you'd like! This only changes the functionality, so it should be compatible with any other form-related mod, such as FormRoulette or Form Rando! If you want to know what each form does, please observe the cheat-sheet seen in my google doc of OpenKH mods.
+assets:
+#Lua Scripts
+- name: scripts/MPRForms.lua
+  method: copy
+  source:
+  - name: MPRForms.lua
