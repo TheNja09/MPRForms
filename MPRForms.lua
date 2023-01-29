@@ -26,7 +26,7 @@ function _OnInit()
 		Save = 0x09A7070 - 0x56450E
 		Obj0 = 0x2A22B90 - 0x56450E
 		Cntrl = 0x2A148A8 - 0x56450E
-    		GamSpd = 0x07151D4 - 0x56454E
+		GamSpd = 0x07151D4 - 0x56454E
 		Sys3 = 0x2A59DB0 - 0x56450E
 		Btl0 = 0x2A74840 - 0x56450E
 		Slot1 = 0x2A20C58 - 0x56450E
@@ -42,7 +42,7 @@ function Cheats()
     myCounter = myCounter - 1
     magicCounter = magicCounter - 1
 	if ReadByte(Cntrl) == 0 then
-	    if ReadByte(Save+0x3524) == 3 and ReadByte(CntrlReadLong(0x24AA2CA) == 0 and ReadByte(Slot1+0x180) <= ReadByte(Slot1+0x184) and ReadByte(Slot1+0x180) > 0 and _shortSpeed > 0.2 then -- If in limit form, Sora's MP is less than or equal to max MP, MP is not 0
+	    if ReadByte(Save+0x3524) == 3 and ReadLong(0x24AA2CA) == 0 and ReadByte(Slot1+0x180) <= ReadByte(Slot1+0x184) and ReadByte(Slot1+0x180) > 0 and _shortSpeed > 0.2 then -- If in limit form, Sora's MP is less than or equal to max MP, MP is not 0
 		if ReadLong(0x2494573) > 500000 and ReadLong(0x2494573) < 700000 then --If any combination of L2 is pressed
 		    if myCounter <= 0 then -- If the counter is 0 or less
 			do
