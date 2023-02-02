@@ -42,7 +42,7 @@ function Cheats()
     myCounter = myCounter - 1
     magicCounter = magicCounter - 1
     if ReadByte(Save+0x3524) == 3 and ReadLong(0x24AA2CA) == 0 and ReadByte(Slot1+0x180) <= ReadByte(Slot1+0x184) and ReadByte(Slot1+0x180) > 0 and _shortSpeed > 0.2 then -- If in limit form, Sora's MP is less than or equal to max MP, MP is not 0
-	if ReadLong(0x2494573) > 500000 and ReadLong(0x2494573) < 700000 then --If any combination of L2 is pressed
+	if ReadLong(0x2494573) > 500000 and ReadLong(0x2494573) < 900000 then --If any combination of L2 is pressed
 	    if myCounter <= 0 then -- If the counter is 0 or less
 		do
 		    if _shortSpeed > 0.2 and _shortSpeed < 1.5 then
